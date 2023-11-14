@@ -51,5 +51,10 @@ namespace aval
 
             
         }
+        
+        private void Close_button(object sender, RoutedEventArgs e)
+        {
+            Close(); // Закрыть окно
+        }
     }
 }

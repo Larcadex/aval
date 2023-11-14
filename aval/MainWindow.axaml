@@ -8,7 +8,7 @@
         ExtendClientAreaToDecorationsHint="True"
         ExtendClientAreaChromeHints="NoChrome"
         ExtendClientAreaTitleBarHeightHint="-1"
-        Title="Авторизация" MaxHeight="450" MaxWidth="900" MinHeight="450" MinWidth="900" >
+        MaxHeight="390" MaxWidth="820" MinHeight="390" MinWidth="820" >
     
     <Window.Styles>
         <Style Selector="Window">
@@ -39,6 +39,15 @@
                     <Setter Property="Padding" Value="10"/> 
                 </Style>
                 
+                <Style Selector="Border" >
+                    <Setter Property="Background" Value="#32353c"/>
+                </Style>
+                
+                <Style Selector="TextBox:IsPointerOver">
+                    <Setter Property="Background" Value="#32353c"/>
+                </Style>
+             
+                
                 <Style Selector="TextBlock">
                     <Setter Property="Foreground" Value="#1999ff"/>
                     <Setter Property="FontWeight" Value="500"/>
@@ -55,7 +64,8 @@
             <CheckBox Content="Запомнить меня" Margin="0,2,30,0" CornerRadius="2"  BorderBrush="Transparent"  Foreground="#afafaf" FontSize="12"  />
             
             <Button Name="LoginButton" HorizontalAlignment="Center" Content="Войти" Background="#2D73FF" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" Width="290" Height="50" CornerRadius="2 " FontWeight="400" FontSize="16" BorderBrush="Transparent" Margin="0,15,0,0" />
-            <TextBlock  Foreground="#afafaf" Padding="60" VerticalAlignment="Bottom" TextDecorations="underline" FontWeight="Normal" HorizontalAlignment="Center" LetterSpacing="0" Text="Помогите, я не могу войти в аккаунт" />
+            <TextBlock  Foreground="#afafaf" Margin="0,20,0,0" VerticalAlignment="Bottom" TextDecorations="underline" FontWeight="Normal" HorizontalAlignment="Center" LetterSpacing="0" Text="Помогите, я не могу войти в аккаунт" />
+
 
         </StackPanel>
         
@@ -88,7 +98,9 @@
             <TextBlock LetterSpacing="0" Foreground="#afafaf" FontWeight="Normal" HorizontalAlignment="Center" Text="приложение чтобы войти" />
             <TextBlock LetterSpacing="0" Foreground="#afafaf" FontWeight="Normal" HorizontalAlignment="Center" Text="с помощью QR-кода" />
           
-            <Button Name="change" HorizontalAlignment="Center" Content="" Background="#2D73FF"  Foreground="White" Width="15" Height="15" CornerRadius="10 "  BorderBrush="Transparent" Margin="0,15,0,0" Click="Button_click" />
+            <Button Name="change" HorizontalAlignment="Center" Content="" Background="#2D73FF"  Foreground="White" Width="15" Height="15" CornerRadius="10 "  BorderBrush="Transparent" Margin="0,15,0,15" Click="Button_click" />
+            <Button Name="ExitButton" HorizontalAlignment="Center" Content="Закрыть" Background="#2D73FF" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" Width="70" Height="30" CornerRadius="2 " FontWeight="400" FontSize="12" BorderBrush="Transparent"  Click="Close_button"/>
+
 
             
         </StackPanel>

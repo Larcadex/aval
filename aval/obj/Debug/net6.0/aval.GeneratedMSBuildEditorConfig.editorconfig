@@ -13,10 +13,10 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = aval
-build_property.ProjectDir = C:\Users\New\RiderProjects\aval\aval\
+build_property.ProjectDir = C:\Users\Серожа\Desktop\repos\aval\aval\
 
-[C:/Users/New/RiderProjects/aval/aval/App.axaml]
+[C:/Users/Серожа/Desktop/repos/aval/aval/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/New/RiderProjects/aval/aval/MainWindow.axaml]
+[C:/Users/Серожа/Desktop/repos/aval/aval/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
