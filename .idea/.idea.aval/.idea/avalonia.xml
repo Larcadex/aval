@@ -5,6 +5,7 @@
       <map>
         <entry key="aval/App.axaml" value="aval/aval.csproj" />
         <entry key="aval/MainWindow.axaml" value="aval/aval.csproj" />
+        <entry key="aval/Window1.axaml" value="aval/aval.csproj" />
       </map>
     </option>
   </component>

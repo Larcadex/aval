@@ -15,7 +15,9 @@ namespace aval
         {
             if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
             {
+                desktop.MainWindow = new Window1();
                 desktop.MainWindow = new MainWindow();
+                
             }
 
             base.OnFrameworkInitializationCompleted();

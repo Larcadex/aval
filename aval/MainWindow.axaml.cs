@@ -1,3 +1,4 @@
+using System;
 using System.Globalization;
 using Avalonia;
 using Avalonia.Controls;
@@ -7,10 +8,10 @@ using Avalonia.Media;
 
 namespace aval
 {
-    
     public partial class MainWindow : Window
     {
         private int cur_image = 0;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -48,13 +49,23 @@ namespace aval
                     Image3.IsVisible = true;
                     break;
             }
-
-            
         }
-        
+
         private void Close_button(object sender, RoutedEventArgs e)
         {
-            Close(); // Закрыть окно
+            Close();
+        }
+
+        private void Reg_button(object sender, RoutedEventArgs e)
+        {
+           
+                var win = new Window1();
+
+                win.Show();
+         
+                Hide();
+            
         }
     }
 }
+
